@@ -1,0 +1,13 @@
+[
+  {
+    "observed": 1700007200,
+    "telegram_update": {
+      "message": {
+        "message_id": 1,
+        "from": {"id": 42, "is_bot": false},
+        "chat": {"id": 42, "type": "private"},
+        "text": "/advanced_paper_report"
+      }
+    }
+  }
+]

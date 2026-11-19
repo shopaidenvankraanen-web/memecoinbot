@@ -1,0 +1,2 @@
+# Core and offline CLI use the Python 3.11+ standard library.
+# For optional Telegram hosting, see requirements-telegram.txt.

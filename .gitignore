@@ -1,0 +1,30 @@
+# Geheime gegevens
+.env
+.env.*
+*.pem
+*.key
+*secret*
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Lokale gegevens en logs
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.log
+scanner_state.json
+
+# Back-ups en archieven
+*.zip
+*.backup
+
+# Editor
+.vscode/
+
+# Lokale omgevingsmappen
+,env./

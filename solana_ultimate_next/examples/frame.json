@@ -1,0 +1,36 @@
+[
+  {
+    "observed": 1700007200,
+    "profiles": [
+      {
+        "chainId": "solana",
+        "tokenAddress": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      }
+    ],
+    "pairs": {
+      "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA": [
+        {
+          "chainId": "solana",
+          "pairAddress": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "baseToken": {
+            "address": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "symbol": "DEMO"
+          },
+          "priceUsd": "0.0055",
+          "liquidity": {
+            "usd": 66000
+          },
+          "volume": {
+            "h24": 100000
+          },
+          "priceChange": {
+            "h24": 15
+          },
+          "marketCap": 500000,
+          "fdv": 600000,
+          "pairCreatedAt": 1699999000000
+        }
+      ]
+    }
+  }
+]
