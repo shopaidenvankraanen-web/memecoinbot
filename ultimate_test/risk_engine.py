@@ -129,5 +129,5 @@ def evaluate_token(
     classification = "HIGH" if blockers or score < 40 else "MEDIUM" if score < 75 else "UNKNOWN"
     confidence = "LOW" if len(missing) >= 4 else "MEDIUM" if missing else "HIGH"
     # Paper eligibility does not imply real-world safety or suitability.
-    eligible = not blockers and score >= 70 and price > 0
+    eligible = (not blockers and score >= 70 and price > 0\n                and token_security is not None\n                and token_security.get("mint_authority_enabled") is False\n                and token_security.get("freeze_authority_enabled") is False\n                and token_security.get("transfer_restrictions") is False\n                and token_security.get("sellability_verified") is True\n                and holder_analysis is not None\n                and holder_analysis.get("top10_share") is not None\n                and holder_analysis.get("cluster_risk") is False)
     return RiskAssessment(score, classification, tuple(findings), tuple(dict.fromkeys(missing)), eligible, confidence)
